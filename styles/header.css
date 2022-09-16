@@ -1,0 +1,28 @@
+.header ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14pt;
+  text-align: center;
+}
+
+.header img {
+  width: 130px;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  background: #00675b;
+  justify-content: flex-start;
+
+  width: 100%;
+  height: 60px;
+}
