@@ -22,7 +22,9 @@
   display: flex;
   background: #00675b;
   justify-content: flex-start;
+  align-items: center;
 
   width: 100%;
   height: 60px;
+  position: fixed;
 }

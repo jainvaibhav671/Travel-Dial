@@ -1,21 +1,22 @@
 body {
   margin: 0px;
 }
+
 .main {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   gap: 32px;
-  height: 100vh;
+  height: 100%;
 
   background: #fff8dc;
-  padding: 32px;
+  padding: 82px;
 }
 
 img {
-  width: 250px;
-  height: 250px;
+  width: 15%;
+  height: 15%;
 }
 
 /* Form */
@@ -29,7 +30,7 @@ img {
 
 /* Description Box */
 .r2 > input {
-  width: 63.3vh;
+  width: 64.8vh;
   height: 100px;
   text-align: center;
 }
@@ -71,22 +72,31 @@ li {
   display: flex;
   flex-flow: column;
   background: #fff8dc;
-  width: 50%;
+  width: 100%;
 }
+
+.items {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
 h2 {
   text-align: center;
   text-decoration: underline;
   font-weight: bold;
 }
 
-.r3 {
-  margin: 8px;
+.amenity {
   display: flex;
-  justify-content: space-around;
+  padding: 6px;
+  gap: 3px;
 }
 
-.amenity {
-  margin: 2px;
+.amenity label {
+  width: auto;
+  vertical-align: middle;
 }
 
 .button1 {
