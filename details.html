@@ -12,11 +12,7 @@
       href="//use.fontawesome.com/releases/v6.2.0/css/all.css"
     />
     <link href="styles/footer.css" rel="stylesheet" />
-    <link href="https://css.gg/check-o.css" rel="stylesheet" />
-    <link href="https://css.gg/box.css" rel="stylesheet" />
-    <link href="https://css.gg/flag-alt.css" rel="stylesheet" />
     <link href="https://css.gg/info.css" rel="stylesheet" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <style type="text/css" media="screen">
       body {
         margin: 0;
@@ -68,11 +64,17 @@
       }
 
       #sec1 .obox1 {
-        margin: 3%;
-        width: 50%;
+        margin: 2%;
+        width: 30%;
+        height: 40%;
+        padding: 18px;
 
+        border: 3px solid #00675b;
+        border-radius: 32px;
         display: flex;
         flex-flow: column;
+        justify-content: center;
+        align-items: center;
       }
 
       #sec1 .box1 {
@@ -121,6 +123,7 @@
       #sec2 {
         display: flex;
         flex-flow: column;
+        gap: 8px;
       }
 
       #sec2 #r1 {
@@ -130,19 +133,22 @@
       #sec2 #r1 #c1 {
         display: flex;
         flex-flow: column;
+        gap: 20px;
         padding: 3%;
         width: 55%;
       }
 
       #sec2 #r1 #c2 {
-        display: flex;
-        flex-flow: column;
-        padding: 3%;
-        width: auto;
+        position: relative;
+        top: 46px;
+        padding: 1%;
+        height: 27.9em;
       }
 
       #sec2 .det {
-        padding: 12px;
+        padding: 1.5%;
+        border: 3px solid #00675b;
+        border-radius: 32px;
       }
 
       #sec2 .det .det-head {
@@ -177,6 +183,13 @@
         padding: 12px;
       }
 
+      #sec2 #tour-itinerary {
+        position: relative;
+        left: 43px;
+        width: 71em;
+        
+      }
+
       #sec2 #tour-itinerary li {
         display: flex;
         gap: 8px;
@@ -185,7 +198,7 @@
   </head>
   <body>
     <div class="header">
-      <img src="resources/logo.png" alt="Travel Dial" />
+      <img onclick="window.location.href='index.html'" src="resources/logo.png" alt="Travel Dial" />
       <div>
         <ul>
           <li>
@@ -198,10 +211,10 @@
             <a href="About.html">About</a>
           </li>
           <li>
-            <a href="Login.html">Login/Signup</a>
+            <a href="login.html">Login/Signup</a>
           </li>
           <li>
-            <a href="partner.html">Partner with us</a>
+            <a href="registration.html">Partner with us</a>
           </li>
         </ul>
       </div>
@@ -315,7 +328,6 @@
           </ul>
         </div>
       </div>
-      <div id="sec3"></div>
     </div>
     <div class="footer">
       <img src="resources/logo.png" alt="Travel Dial" />

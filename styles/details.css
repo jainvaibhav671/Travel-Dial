@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background: #fff8dc;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+}
+
+.main {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 80%;
+  padding: 8%;
+}
+
+.red-button {
+  border: 1px solid #000000;
+  background: #dd2242;
+  color: white;
+  font-weight: bold;
+  border-radius: 32px;
+  padding: 3%;
+}
+
+.green-button {
+  border: 1px solid #000000;
+  background: #00675b;
+  color: white;
+  font-weight: bold;
+  border-radius: 32px;
+  padding: 3%;
+}
+
+#sec1 {
+  display: flex;
+}
+
+#sec1 img {
+  width: 50%;
+}
+
+#sec1 .obox1 {
+  margin: 3%;
+  width: 50%;
+
+  display: flex;
+  flex-flow: column;
+}
+
+#sec1 .box1 {
+  margin: 8%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+
+  text-align: center;
+}
+
+#sec1 .box1 span {
+  padding: 2%;
+}
+
+#sec1 .box1 .left-side {
+  color: #000000;
+  font-weight: bold;
+  margin: auto;
+}
+#sec1 .box1 .right-side {
+  margin: auto;
+}
+
+#sec1 .box1 .prices {
+  display: flex;
+}
+
+#sec1 .box1 .prices .new-price {
+  color: #00675b;
+  font-weight: bold;
+}
+
+#sec1 .box1 .prices .old-price {
+  color: #dd2242;
+  text-decoration: line-through;
+  text-decoration-color: #aaaaaa;
+  text-decoration-thickness: 2px;
+}
+
+#sec1 .buttons {
+  display: inline-flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+#sec2 {
+  display: flex;
+  flex-flow: column;
+}
+
+#sec2 #r1 {
+  display: flex;
+}
+
+#sec2 #r1 #c1 {
+  display: flex;
+  flex-flow: column;
+  padding: 3%;
+  width: 55%;
+}
+
+#sec2 #r1 #c2 {
+  display: flex;
+  flex-flow: column;
+  padding: 3%;
+  width: auto;
+}
+
+#sec2 .det {
+  padding: 12px;
+}
+
+#sec2 .det .det-head {
+  font-weight: bold;
+  font-size: 13pt;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#sec2 #highlights {
+  padding: 8px;
+
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+
+#sec2 #highlights li {
+  display: flex;
+  align-items: center;
+}
+
+#sec2 #highlights li span {
+  margin: 8px;
+}
+
+#sec2 #c2 ul {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  padding: 12px;
+}
+
+#sec2 #tour-itinerary li {
+  display: flex;
+  gap: 8px;
+}
