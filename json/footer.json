@@ -1,0 +1,24 @@
+{
+    "logo" : {
+        "src" : "resources/logo.png",
+        "alt" : "Travel Dial"
+    },
+    "links" : [
+        {
+            "href" : "About.html",
+            "text" : "About Us"
+        },
+        {
+            "href" : "Pricing.html",
+            "text" : "Pricing"
+        },
+        {
+            "href" : "Company.html",
+            "text" : "Company"
+        },
+        {
+            "href" : "Blog.html",
+            "text" : "Blog"
+        }
+    ]
+}

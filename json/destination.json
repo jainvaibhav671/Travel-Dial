@@ -1,0 +1,64 @@
+{
+	"packages" : [
+		{
+			"image" : {
+				"src" : "",
+				"alt" : ""
+			},
+			"info" : {
+				"title" : "",
+				"location" : "",
+				"rating" : {
+					"checked-stars" : 3,
+					"unchecked-stars" : 2,
+					"checked-star-class" : "fa fa-star checked",
+					"unchecked-star-class" : "fa fa-star unchecked"
+				},
+				"route" : "",
+				"old-price" : 3000,
+				"new-price" : 3000,
+				"details-page" : "details.html"
+			}
+		},
+		{
+			"image" : {
+				"src" : "",
+				"alt" : ""
+			},
+			"info" : {
+				"title" : "",
+				"location" : "",
+				"rating" : {
+					"checked-stars" : 3,
+					"unchecked-stars" : 2,
+					"checked-star-class" : "fa fa-star checked",
+					"unchecked-star-class" : "fa fa-star unchecked"
+				},
+				"route" : "",
+				"old-price" : 3000,
+				"new-price" : 3000,
+				"details-page" : "details.html"
+			}
+		},
+		{
+			"image" : {
+				"src" : "",
+				"alt" : ""
+			},
+			"info" : {
+				"title" : "",
+				"location" : "",
+				"rating" : {
+					"checked-stars" : 3,
+					"unchecked-stars" : 2,
+					"checked-star-class" : "fa fa-star checked",
+					"unchecked-star-class" : "fa fa-star unchecked"
+				},
+				"route" : "",
+				"old-price" : 3000,
+				"new-price" : 3000,
+				"details-page" : "details.html"
+			}
+		}
+	]
+}
