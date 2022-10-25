@@ -6,7 +6,8 @@ body {
 }
 .image {
   background-image: url("../resources/380a8e52691687ca82a5cc61cd2707e3a44fc41d-4824x3362.jpg");
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
+  background-size: cover;
 
   /* background-position: center; */
   /* position: relative;  */
@@ -655,4 +656,3 @@ or for the fact numbers in general */
   height: 100px;
   /* margin-bottom: -10%; */
 }
-

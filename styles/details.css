@@ -48,11 +48,17 @@ ul {
 }
 
 #sec1 .obox1 {
-  margin: 3%;
-  width: 50%;
+  margin: 2%;
+  width: 30%;
+  height: 40%;
+  padding: 18px;
 
+  border: 3px solid #00675b;
+  border-radius: 32px;
   display: flex;
   flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #sec1 .box1 {
@@ -101,6 +107,7 @@ ul {
 #sec2 {
   display: flex;
   flex-flow: column;
+  gap: 8px;
 }
 
 #sec2 #r1 {
@@ -110,19 +117,22 @@ ul {
 #sec2 #r1 #c1 {
   display: flex;
   flex-flow: column;
+  gap: 20px;
   padding: 3%;
   width: 55%;
 }
 
 #sec2 #r1 #c2 {
-  display: flex;
-  flex-flow: column;
-  padding: 3%;
-  width: auto;
+  position: relative;
+  top: 46px;
+  padding: 1%;
+  height: 27.9em;
 }
 
 #sec2 .det {
-  padding: 12px;
+  padding: 1.5%;
+  border: 3px solid #00675b;
+  border-radius: 32px;
 }
 
 #sec2 .det .det-head {
@@ -155,6 +165,13 @@ ul {
   flex-flow: column;
   gap: 10px;
   padding: 12px;
+}
+
+#sec2 #tour-itinerary {
+  position: relative;
+  left: 43px;
+  width: 71em;
+  
 }
 
 #sec2 #tour-itinerary li {

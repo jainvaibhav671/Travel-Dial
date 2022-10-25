@@ -1,3 +1,7 @@
+
+body {
+  margin: 0px;
+}
 .header ul {
   list-style-type: none;
   display: flex;

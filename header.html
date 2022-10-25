@@ -3,52 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <title></title>
-    <style>
-      body {
-        margin: 0;
-      }
-      ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: space-between;
-        gap: 16px;
-      }
-
-      a {
-        text-decoration: none;
-        color: #ffffff;
-        font-weight: bold;
-        font-size: 14pt;
-        text-align: center;
-      }
-
-      img {
-        width: 130px;
-        height: auto;
-      }
-
-      .header {
-        display: flex;
-        background: #00675b;
-        justify-content: flex-start;
-
-        width: 100vh;
-        height: 60px;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/header.css">
   </head>
   <body>
-    <div class="header">
-      <img src="resources/logo.png" alt="Travel Dial" />
-      <div>
-        <ul>
-          <li><a href="Destination.html">Destinations</a></li>
-          <li><a href="Galley.html">Gallery</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="Login.html">Login/Signup</a></li>
-          <li><a href="partner.html">Partner with us</a></li>
-        </ul>
-      </div>
-    </div>
+    <div class="header"></div>
   </body>
+  <script>
+
+    let header = document.querySelector(".header");
+
+    async function loadHeader() {
+      let request = new Request("json/header.json");
+      let response = await fetch(request);
+
+      let jsonObj = await response.json();
+      loadLogo(jsonObj);
+      loadLinks(jsonObj);
+    }
+
+    function loadLogo(jsonObj) {
+      let logo = document.createElement("img");
+      logo.src = jsonObj["logo"]["path"];
+      logo.alt = jsonObj["logo"]["alt"]
+      header.append(logo);
+    }
+
+    function loadLinks(jsonObj) {
+      let div = document.createElement("div");
+      let links = document.createElement("ul");
+
+      div.append(links);
+      header.append(div);
+
+      for (let link of jsonObj["links"]) {
+        let li = document.createElement("li");
+        let a = document.createElement("a");
+
+        a.textContent = link["text"];
+        a.href = link["href"];
+
+        li.append(a);
+        links.append(li);
+      }
+    }
+
+    loadHeader()
+    
+  </script>
 </html>
