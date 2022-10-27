@@ -2,19 +2,19 @@
 	"packages" : [
 		{
 			"image" : {
-				"src" : "",
+				"src" : "resources/images.jpg",
 				"alt" : ""
 			},
 			"info" : {
-				"title" : "",
-				"location" : "",
+				"title" : "Uttrakhand Tours",
+				"location" : "Kapriwas/Haryana",
 				"rating" : {
 					"checked-stars" : 3,
 					"unchecked-stars" : 2,
 					"checked-star-class" : "fa fa-star checked",
 					"unchecked-star-class" : "fa fa-star unchecked"
 				},
-				"route" : "",
+				"route" : "Delhi(4N) -> Nainital (2N) -> Mussoorie (3N)",
 				"old-price" : 3000,
 				"new-price" : 3000,
 				"details-page" : "details.html"
@@ -22,7 +22,7 @@
 		},
 		{
 			"image" : {
-				"src" : "",
+				"src" : "resources/images.jpg",
 				"alt" : ""
 			},
 			"info" : {

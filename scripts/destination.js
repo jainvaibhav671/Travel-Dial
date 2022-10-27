@@ -1,29 +1,33 @@
 class Package {
 	constructor(jsonData) {
 		this.package = document.createElement('div');
-		this.package.className = "package";
-		this.jsonObj = jsonData;
+		this.package.setAttribute('class', 'package');
 
-		addImage(jsonData["image"]);
-		addInfo(jsonData["info"]);
+		this.addImage(jsonData["image"]);
+		this.addInfo(jsonData["info"]);
 	}
 
 	addImage = function(imgData) {
 		let img = document.createElement('img');
-		img.src = imgData["src"];
-		img.alt = imgData["alt"];
+		img.setAttribute("src", imgData["src"]);
+		img.setAttribute("alt", imgData["alt"]);
 		this.package.append(img);
 	}
 
 	addInfo = function (packageInfo) {
 		let div = document.createElement('div');
-		div.className = "info";
+		div.setAttribute('class', 'info');
+		this.package.append(div);
 
 		// Title of Package
-		div.append(document.createElement('h3').textContent = packageInfo["title"]);
+		let title = document.createElement('h3');
+		title.textContent = packageInfo["title"];
+		div.append(title);
 
 		// Location
-		div.append(document.createElement('p').textContent = packageInfo["location"]);
+		let loc = document.createElement('p');
+		loc.textContent = packageInfo["location"];
+		div.append(loc);
 
 		// Rating
 		let ratings = document.createElement('div');
@@ -66,7 +70,7 @@ class Package {
 		let button = document.createElement('button');
 		button.setAttribute('onclick', `window.location.href=${packageInfo["details-page"]}`);
 		button.textContent = "View Deal";
-		div.append(button);
+		priceDiv.append(button);
 	}
 
 	getPackage = function() {
@@ -75,7 +79,7 @@ class Package {
 }
 
 async function loadDestinationPageContent() {
-	let request = new Request("json/Destination.json");
+	let request = new Request("json/destination.json");
 	let response = await fetch(request);
 
 	let jsonObj = await response.json();
@@ -84,14 +88,13 @@ async function loadDestinationPageContent() {
 }
 
 function loadPackages(jsonObj) {
-	let packagesDiv = document.createElement('div');
-	packagesDiv.setAttribute('id', "packages");
-	for (let packageData in jsonObj["packages"]) {
+	let packagesDiv = document.querySelector("#packages");
+	for (let packageData of jsonObj["packages"]) {
 		let package = new Package(packageData);
+		console.log(packageData);
+		console.log(package.getPackage());
 		packagesDiv.append(package.getPackage());
 	}
-	let main = document.querySelector('.main');
-	main.append(packagesDiv);
 }
 
 loadDestinationPageContent();
