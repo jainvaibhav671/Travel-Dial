@@ -10,43 +10,6 @@
   </body>
   <script>
 
-    let footer = document.querySelector(".footer");
-
-    async function loadHeader() {
-      let request = new Request("json/footer.json");
-      let response = await fetch(request);
-
-      let jsonObj = await response.json();
-      loadLogo(jsonObj["logo"]);
-      loadLinks(jsonObj["links"]);
-    }
-
-    function loadLogo(jsonObj) {
-      let logo = document.createElement("img");
-      logo.src = jsonObj["src"];
-      logo.alt = jsonObj["alt"];
-      footer.append(logo);
-    }
-
-    function loadLinks(jsonObj) {
-      let div = document.createElement("div");
-      let links = document.createElement("ul");
-
-      div.append(links);
-      footer.append(div);
-
-      for (let link of jsonObj) {
-        let li = document.createElement("li");
-        let a = document.createElement("a");
-
-        a.textContent = link["text"];
-        a.href = link["href"];
-
-        li.append(a);
-        links.append(li);
-      }
-    }
-
-    loadHeader()
+    
   </script>
 </html>

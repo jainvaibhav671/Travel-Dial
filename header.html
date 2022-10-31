@@ -8,46 +8,4 @@
   <body>
     <div class="header"></div>
   </body>
-  <script>
-
-    let header = document.querySelector(".header");
-
-    async function loadHeader() {
-      let request = new Request("json/header.json");
-      let response = await fetch(request);
-
-      let jsonObj = await response.json();
-      loadLogo(jsonObj);
-      loadLinks(jsonObj);
-    }
-
-    function loadLogo(jsonObj) {
-      let logo = document.createElement("img");
-      logo.src = jsonObj["logo"]["path"];
-      logo.alt = jsonObj["logo"]["alt"]
-      header.append(logo);
-    }
-
-    function loadLinks(jsonObj) {
-      let div = document.createElement("div");
-      let links = document.createElement("ul");
-
-      div.append(links);
-      header.append(div);
-
-      for (let link of jsonObj["links"]) {
-        let li = document.createElement("li");
-        let a = document.createElement("a");
-
-        a.textContent = link["text"];
-        a.href = link["href"];
-
-        li.append(a);
-        links.append(li);
-      }
-    }
-
-    loadHeader()
-    
-  </script>
 </html>

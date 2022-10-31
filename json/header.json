@@ -1,6 +1,6 @@
 {
     "logo" : {
-        "path" : "resources/logo.png",
+        "src" : "resources/logo.png",
         "alt" : "Travel Dial"
     },
     "links" : [
