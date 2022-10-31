@@ -1,0 +1,85 @@
+{
+	"image" : {
+		"src" : "resources/add-photo.png",
+		"alt" : "Add Photo"
+	},
+	"form" : {
+		"div1" : {
+			"class" : "r1",
+			"inputs" : [
+				{
+					"type" : "text",
+					"placeholder" : "Tour Destinations"
+				},
+				{
+					"type" : "text",
+					"placeholder" : "Number of Haults"
+				}
+			]
+		},
+		"div2" : {
+			"class" : "r1",
+			"inputs" : [
+				{
+					"type" : "text",
+					"placeholder" : "Duration"
+				},
+				{
+					"type" : "text",
+					"placeholder" : "Price in INR"
+				}
+			]
+		},
+		"div3" : {
+			"class" : "r1 r2",
+			"inputs" : [
+				{
+					"type" : "text",
+					"placeholder" : "Description"
+				}
+			]
+		},
+		"itenaries" : {
+			"class" : "itenaries r2",
+			"span" : "List tour itenaries",
+			"days" : [
+				"Day 1:",
+				"Day 2:",
+				"Day 3:"
+			],
+			"button" : {
+				"class" : "add-days-button",
+				"text" : "+ Add Days"
+			}
+		}
+	},
+	"amenities" : {
+		"h2" : "Amenities",
+		"items" : [
+			"Wi-fi",
+			"Swimming Pool",
+			"AC",
+			"RO Water",
+			"Power Backup",
+			"CCTV",
+			"First-Aid",
+			"TV",
+			"Fire Extinguisher",
+			"Housekeeping",
+			"Card Payment",
+			"Reception",
+			"24/7 Check-In",
+			"Travel Guide",
+			"",
+			"",
+			"Meals",
+			"Buffet",
+			"Cab Service"
+		],
+		"button" : {
+			"class" : "button1",
+			"text" : "CreatePackage"
+		}
+	}
+	
+}

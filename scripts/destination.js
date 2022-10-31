@@ -69,7 +69,9 @@ class Package {
 
 		// view deal button
 		let button = document.createElement('button');
-		button.setAttribute('onclick', `window.location.href=${packageInfo["details-page"]}`);
+		button.addEventListener('click', () => {
+			window.location.href = packageInfo["details-page"];
+		})
 		button.setAttribute('class', "red-button");
 		button.textContent = "View Deal";
 		priceDiv.append(button);
