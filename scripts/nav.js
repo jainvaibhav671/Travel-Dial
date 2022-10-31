@@ -9,11 +9,14 @@ async function navbar() {
 }
 
 function loadLogo(jsonObj, elem) {
+  let a = document.createElement('a');
   let logo = document.createElement("img");
   logo.setAttribute("src", jsonObj["logo"]["src"]);
   logo.setAttribute("alt", jsonObj["logo"]["alt"]);
-  logo.setAttribute("onclick", "window.location.href=\"index.html\"")
-  elem.append(logo);
+  a.setAttribute("href", "/");
+
+  a.append(logo);
+  elem.append(a);
 }
 
 function loadLinks(jsonObj, elem) {
