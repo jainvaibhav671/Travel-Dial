@@ -13,7 +13,7 @@ function loadLogo(jsonObj, elem) {
   let logo = document.createElement("img");
   logo.setAttribute("src", jsonObj["logo"]["src"]);
   logo.setAttribute("alt", jsonObj["logo"]["alt"]);
-  a.setAttribute("href", "/");
+  a.setAttribute("href", "index.html");
 
   a.append(logo);
   elem.append(a);
