@@ -1,7 +1,7 @@
 
 let mongoose = require('mongoose')
 
-let URI = "mongodb+srv://vaibhavj:rockatale@cluster0.zxwqy5f.mongodb.net/?retryWrites=true&w=majority"
+let URI = "mongodb+srv://<username>:<password>@cluster0.zxwqy5f.mongodb.net/?retryWrites=true&w=majority"
 
 let connectdb = async() => {
 try{
