@@ -1,0 +1,28 @@
+{
+    "logo" : {
+        "src" : "resources/logo.png",
+        "alt" : "Travel Dial"
+    },
+    "links" : [
+        { 
+            "href" : "/Destinations",
+            "text" : "Destinations"
+        },
+        {
+            "href" : "/Gallery",
+            "text" : "Gallery"
+        },
+        {
+            "href" : "/About",
+            "text" : "About"
+        },
+        {
+            "href" : "/Login",
+            "text" : "Login/Signup"
+        },
+        {
+            "href" : "/Partner",
+            "text" : "Parnter with Us"
+        }
+    ]
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #008000;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+};
+
+#btn {
+  background-color: #000;
+}
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <br>
+  <p style = "font-style: italic;text-shadow: 2px 2px 5px greenyellow;">WE ARE TRAVEL DIAL AND HERE TO GET YOU TO PLACES YOU DREAM ABOUT</p>
+  <br>
+  <p>We take contact details and provide you travel advisors in various places and
+give you choices about where you wanna go in which package and with whom</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team1.jpg" alt="chandan" style="width:100%">
+      <div class="container">
+        <h2>Chandan Dhingra</h2>
+        <p class="title">Full Stack developer</p>
+        <p>chandan.21cse@gmail.com</p>
+        <p>+91-9664153967</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="khushal" style="width:100%">
+      <div class="container">
+        <h2>Khushal Rajoria</h2>
+        <p class="title">Full Stack developer</p>
+        <p>khushal.21cse@gmail.com</p>
+        <p>+91-8112202713</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team3.jpg" alt="vaibhav" style="width:100%">
+      <div class="container">
+        <h2>Vaibhav Jain</h2>
+        <p class="title">Full Stack developer</p>
+        <p>vaibhav.21cse@gmail.com</p>
+        <p>+91-9610930533</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="button">
+    <button id="btn">Return to home</button>
+  </div>
+
+</div>
+
+</body>
+</html>

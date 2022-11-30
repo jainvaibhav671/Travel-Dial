@@ -1,0 +1,45 @@
+{
+    "heading": "WHERE \n TO \n NOW?",
+    "heading1": "MOST TRUSTED AGENTS",
+    "heading2": "MOST TRAVELLED DESTINATIONS",
+    "text1":"Name of agents associated with us",
+    "text2":"Name of places most visted by users",
+
+    "input1Placeholder": "Name",
+    "input2Placeholder": "Mobile Number",
+    "buttontext": "Start travelling",
+    "image": ["resources/photo-1611892440504-42a792e24d32.jpg", 
+    "resources/travelling.jpg",
+    "resources/travel.png",
+    "resources/here.png",
+    "resources/copy.png"],
+    "section2buttons" : "learn more",
+    "charphotos" : [
+        "resources/SliderImage1.png",
+        "resources/SliderImage2.png",
+        "resources/SliderImage3.png"
+    ],
+    "third" : [
+        "resources/travel.png",
+        "resources/here.png",
+        "resources/copy.png",
+        "resources/bed.png",
+        "resources/100+.png",
+        "resources/43,000+.png",
+        "resources/30+.png",
+        "resources/umbrella.png",
+        "resources/thumb.png",
+        "resources/star.png"
+    ],
+    "fourth" : [
+        "resources/phot.png",
+        "resources/Taj.png",
+        "resources/hawamahal.png",
+        "resources/golden.png",
+        "resources/beach.png",
+        "resources/boat.png",
+        "resources/rath.png"
+    ]
+    
+   
+}

@@ -1,0 +1,55 @@
+{
+	"header" : {
+	    "logo" : {
+	        "src" : "resources/logo.png",
+	        "alt" : "Travel Dial"
+	    },
+	    "links" : [
+	        { 
+	            "href" : "/Destinations",
+	            "text" : "Destinations"
+	        },
+	        {
+	            "href" : "/Gallery",
+	            "text" : "Gallery"
+	        },
+	        {
+	            "href" : "/About",
+	            "text" : "About"
+	        },
+	        {
+	            "href" : "/Login",
+	            "text" : "Login/Signup"
+	        },
+	        {
+	            "href" : "/Partner",
+	            "text" : "Parnter with Us"
+	        }
+	    ]
+	},
+	
+	"footer" : {
+	    "logo" : {
+	        "src" : "resources/logo.png",
+	        "alt" : "Travel Dial"
+	    },
+	    "links" : [
+	        {
+	            "href" : "/About",
+	            "text" : "About Us"
+	        },
+	        {
+	            "href" : "/Pricing",
+	            "text" : "Pricing"
+	        },
+	        {
+	            "href" : "/Company",
+	            "text" : "Company"
+	        },
+	        {
+	            "href" : "/Blog",
+	            "text" : "Blog"
+	        }
+	    ]
+	}
+}

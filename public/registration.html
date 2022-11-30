@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Travel-Dial</title>
+    <link rel="stylesheet" href="styles/registration.css" media="all">
+    <link rel="stylesheet" href="styles/header.css" media="all">
+    <link rel="stylesheet" href="styles/footer.css" media="all">
+  </head>
+  <body>
+    <!-- <div class="header">
+      <img onclick="window.location.href='index.html'" src="resources/logo.png" alt="Travel Dial" />
+      <div>
+        <ul>
+          <li><a href="Destination.html">Destinations</a></li>
+          <li><a href="Galley.html">Gallery</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="login.html">Login/Signup</a></li>
+          <li><a href="registration.html">Partner with us</a></li>
+        </ul>
+      </div>
+    </div> -->
+    <div class="header"></div>
+    <div class="main">
+      <img src="resources/add-photo.png" alt="Add Photo" />
+      <form action="/post" method="POST">
+        <div class="form">
+          <div class="r1">
+            <input name="destinations" type="text" placeholder="Tour Destinations" />
+            <input name="haults" type="text" placeholder="Number of Haults" />
+          </div>
+          <div class="r1">
+            <input name="duration" type="text" placeholder="Duration" />
+            <input name="price" type="text" placeholder="Price in INR" />
+          </div>
+          <div class="r1 r2">
+            <input name="description" type="text" placeholder="Description" />
+          </div>
+          <div class="itenaries r2">
+            <span>List tour itenaries</span>
+            <ul>
+              <li>Day 1:</li>
+              <li>Day 2:</li>
+              <li>Day 3:</li>
+              <button class="add-days-button">+ Add Days</button>
+            </ul>
+          </div>
+        </div>
+        <div class="amenities">
+          <h2>Amenities</h3>
+            <div class="items">
+
+            <div class="amenity">
+              <input id="chbox1" name="Wi-Fi" type="checkbox" value="Wi-Fi" />
+              <label for="chbox1">Wi-fi</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="Swimming Pool" value="Swimming Pool" />
+              <label for="chbox1">Swimming Pool</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="AC" value="AC" />
+              <label for="chbox1">AC</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="RO Water" value="RO Water" />
+              <label for="chbox1">RO Water</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="Power_Backup" value="Power Backup" />
+              <label for="chbox1">Power Backup</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="CCTV" value="CCTV" />
+              <label for="chbox1">CCTV</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="First Aid" value="First Aid" />
+              <label for="chbox1">First-Aid</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="TV" value="TV" />
+              <label for="chbox1">TV</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="Fire Extinguisher" value="Fire Extinguisher" />
+              <label for="chbox1">Fire Extinguisher</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="Housekeeping" value="Housekeeping" />
+              <label for="chbox1">Housekeeping</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="Card Payment" value="Card Payment" />
+              <label for="chbox1">Card Payment</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="Reception" value="Reception" />
+              <label for="chbox1">Reception</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="24/7 Check-In" value="24/7 Check-In" />
+              <label for="chbox1">24/7 Check-In</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="Travel Guide" value="Travel Guide" />
+              <label for="chbox1">Travel Guide</label>
+            </div>
+
+            <div></div>
+            <div></div>
+
+            <div class="amenity">
+              <input type="checkbox" name="Meals" value="Meals" />
+              <label for="chbox1">Meals</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="Buffet" value="Buffet" />
+              <label for="chbox1">Buffet</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="Cab Service" value="Cab Service" />
+              <label for="chbox1">Cab Service</label>
+            </div>
+          </div>
+          </div>
+          <div id="button1">
+            <button type="submit" name="submit">Create Package</button>
+          </div>
+        </div>
+      </form>
+    <!-- <div class="footer">
+      <img src="resources/logo.png" alt="Travel Dial" />
+      <div>
+        <ul>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Pricing.html">Pricing</a></li>
+          <li><a href="Company.html">Company</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </div> -->
+    <div class="footer"></div>
+  </body>
+  <script src="/scripts/nav.js"></script>
+  <!-- <script src="/scripts/registration.js"></script> -->
+</html>

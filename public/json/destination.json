@@ -1,0 +1,113 @@
+{
+	"SearchBar" : {
+		"sp1" : "What is your Destination?",
+		"dropdown" : [
+			{
+				"name" : "city",
+				"options" : [
+					"Choose city",
+					"Nanital",
+					"Shimla",
+					"Jaipur"
+				]
+			},
+			{
+				"name" : "state",
+				"options" : [
+					"Choose State",
+					"Punjab",
+					"Uttrakhand",
+					"Rajasthan"
+				]
+			}
+		],
+		"date-forms" : [
+			{
+				"label" : {
+					"for" : "from",
+					"text" : "From:"
+				},
+				"input" : {
+					"type" : "date",
+					"name" : "from"
+				}
+			},
+			{
+				"label" : {
+					"for" : "to",
+					"text" : "To:"
+				},
+				"input" : {
+					"type" : "date",
+					"name" : "to"
+				}
+			}
+		],
+		"button" : {
+			"class" : "red-button",
+			"text" : "Search"
+		}
+	}
+	,"Packages" : [
+		{
+			"image" : {
+				"src" : "resources/images.jpg",
+				"alt" : ""
+			},
+			"info" : {
+				"title" : "Uttrakhand Tours",
+				"location" : "Kapriwas/Haryana",
+				"rating" : {
+					"checked-stars" : 3,
+					"unchecked-stars" : 2,
+					"checked-star-class" : "fa fa-star checked",
+					"unchecked-star-class" : "fa fa-star unchecked"
+				},
+				"route" : "Delhi(4N) -> Nainital (2N) -> Mussoorie (3N)",
+				"old-price" : 3000,
+				"new-price" : 3000,
+				"details-page" : "details.html"
+			}
+		},
+		{
+			"image" : {
+				"src" : "resources/images.jpg",
+				"alt" : ""
+			},
+			"info" : {
+				"title" : "Uttrakhand Tours",
+				"location" : "Kapriwas/Haryana",
+				"rating" : {
+					"checked-stars" : 3,
+					"unchecked-stars" : 2,
+					"checked-star-class" : "fa fa-star checked",
+					"unchecked-star-class" : "fa fa-star unchecked"
+				},
+				"route" : "Delhi(4N) -> Nainital (2N) -> Mussoorie (3N)",
+				"old-price" : 3000,
+				"new-price" : 3000,
+				"details-page" : "details.html"
+			}
+		},
+		{
+			"image" : {
+				"src" : "resources/images.jpg",
+				"alt" : ""
+			},
+			"info" : {
+				"title" : "Uttrakhand Tours",
+				"location" : "Kapriwas/Haryana",
+				"rating" : {
+					"checked-stars" : 3,
+					"unchecked-stars" : 2,
+					"checked-star-class" : "fa fa-star checked",
+					"unchecked-star-class" : "fa fa-star unchecked"
+				},
+				"route" : "Delhi(4N) -> Nainital (2N) -> Mussoorie (3N)",
+				"old-price" : 3000,
+				"new-price" : 3000,
+				"details-page" : "details.html"
+			}
+		}
+	]
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Travel-Dial</title>
+    <link rel="stylesheet" href="styles/registration.css" media="all">
+
+    {{>nav_css}}
+
+  </head>
+  {{!-- <script type="module" src=/scripts/registration.js defer></script> --}}
+  <body>
+    
+    {{>header}}
+    <div class="main">
+      <div id="img-input" onclick="showModal()">
+        <img id="add-photo-image" src="resources/add-photo.png" alt="Add Photo" />
+        <input type="file" accept="images/*" name="images" id="images" style="display:none"/>
+      </div>
+
+      <form action="/post" method="POST">
+        <div class="form">
+          <div class="r1">
+            <input name="destinations" type="text" placeholder="Tour Destinations" />
+            <input name="haults" type="text" placeholder="Number of Haults" />
+          </div>
+          <div class="r1">
+            <input name="duration" type="text" placeholder="Duration" />
+            <input name="price" type="text" placeholder="Price in INR" />
+          </div>
+          <div class="r1 r2">
+            <input name="description" type="text" placeholder="Description" />
+          </div>
+          <div class="itenaries r2">
+            <span>List tour itenaries</span>
+            <ul>
+              <li>Day 1:</li>
+              <li>Day 2:</li>
+              <li>Day 3:</li>
+              <button class="add-days-button">+ Add Days</button>
+            </ul>
+          </div>
+        </div>
+        <div class="amenities">
+          <h2>Amenities</h3>
+            <div class="items">
+
+            <div class="amenity">
+              <input name="Wi-Fi" type="checkbox" value="1" />
+              <label for="chbox1">Wi-fi</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="Swimming Pool" value="1" />
+              <label for="chbox1">Swimming Pool</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="AC" value="1" />
+              <label for="chbox1">AC</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="RO Water" value="1" />
+              <label for="chbox1">RO Water</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="Power_Backup" value="1" />
+              <label for="chbox1">Power Backup</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="CCTV" value="1" />
+              <label for="chbox1">CCTV</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="First Aid" value="1" />
+              <label for="chbox1">First-Aid</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="TV" value="1" />
+              <label for="chbox1">TV</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="Fire Extinguisher" value="1" />
+              <label for="chbox1">Fire Extinguisher</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="Housekeeping" value="1" />
+              <label for="chbox1">Housekeeping</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="Card Payment" value="1" />
+              <label for="chbox1">Card Payment</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="Reception" value="1" />
+              <label for="chbox1">Reception</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="24/7 Check-In" value="1" />
+              <label for="chbox1">24/7 Check-In</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="Travel Guide" value="1" />
+              <label for="chbox1">Travel Guide</label>
+            </div>
+
+            <div></div>
+            <div></div>
+
+            <div class="amenity">
+              <input type="checkbox" name="Meals" value="1" />
+              <label for="chbox1">Meals</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="Buffet" value="1" />
+              <label for="chbox1">Buffet</label>
+            </div>
+            <div class="amenity">
+              <input type="checkbox" name="Cab Service" value="1" />
+              <label for="chbox1">Cab Service</label>
+            </div>
+          </div>
+          </div>
+          <button type="submit" id="btn" name="submit">Create Package</button>
+        </div>
+      </form>
+      
+    </div>
+    
+    {{>footer}}
+  </body>
+
+
+</html>

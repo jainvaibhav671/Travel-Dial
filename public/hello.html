@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>travel dial</title>
+  <link rel="stylesheet" href="./styles/traveldial.css" type="text/css" media="screen" title="no title"
+    charset="utf-8" />
+  <link rel="stylesheet" href="styles/header.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+  <link rel="stylesheet" href="styles/footer.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+  <!-- <link rel="stylesheet" href="wp.css" type="text/css"> -->
+</head>
+
+<body>
+
+  <div class="header">
+    <img src="resources/logo.png" alt="Travel Dial" />
+    <div>
+      <ul>
+        <li><a href="Destination.html">Destinations</a></li>
+        <span id="galleryscroll">
+          <li><a>Gallery</a></li>
+        </span>
+       <span id="aboutscroll"> <li><a>About</a></li></span>
+        <li><a href="Login.html">Login/Signup</a></li>
+        <li><a href="registration.html">Partner with us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- <div class="header"></div> -->
+
+  <div class="image">
+    <p><span id="heading1"></span></p>
+    <p class="input1">
+      <input id="input1" placeholder="" type="text" style="width: 240px;"><br>
+      <input id="input2" placeholder="" style="width: 240px;" type="text">
+    </p>
+    <button class="starttravelling" style="cursor:pointer;" onclick="window.location.href='Destination.html'"></button>
+  </div>
+
+
+
+  <div class="second">
+
+    <h3 class="heading1"></h3>
+    <p class="text1"></p>
+    <button class="learmore1" style="cursor:pointer;" onclick="checklearn1()"></button>
+    <p id="demo" style="border: 2px solid black; "><br>There are many agents who we are associated and
+    <br>Here are our top trusted agents<br>
+    <br> 1. Laxmi travels (shmila)
+    <br> 2. Atlas travels (goa)
+    <br> 3. Mittal travels (udaipur)
+  </p>
+
+
+
+    <h3 class="heading2"></h3>
+    <p class="text2"></p>
+    <button class="learmore2" style="cursor: pointer;" onclick="checklearn2()"></button>
+    <p id="demob" style="border: 2px solid black; "><br>There are many agents who we are associated and
+      <br>Here are our top trusted agents<br>>
+      <br> 1. Shimla (Laxmi Travels)
+      <br> 2. Goa (Atlas Travels)
+      <br> 3. Udaipur (Mittal Travels)
+    </p>
+
+    <ul style="list-style: none;">
+      <li><a href="#"><img  class="Sec2Img2" src=""></a>
+      </li>
+      <li><a href="#"><img  class="Sec2Img1" src=""></a></li>
+    </ul>
+
+
+    <div id="charphotos">
+      <button class="left" style="cursor: pointer;" onclick="plusSlides(-1)"><strong> ❮ </strong></button>
+
+      <div class="slideshow fade"><img src=""></div>
+      <div class="slideshow fade"><img src=""></div>
+      <div class="slideshow fade"><img src=""></div>
+
+
+      <button class="right" style="cursor: pointer;" onclick="plusSlides(1)"> <strong> ❯ </strong></button>
+    </div>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+    <!-- <img src="../Travel-Dial/resources/slide.png" id="slide"> -->
+  </div>
+
+
+  <div class="third">
+    <div class="container">
+      <img id="tarvel" src="">
+      <img class="top-img" src="">
+
+    </div>
+    <p class="bowl"><img id="copy" src=""><br>Extra Ordinary service right<br> from the sales
+      staff to
+      tour<br> managers to helps get best <br>holidays and life long memories.</p>
+    <p class="bed"><img src=""><br>Authentic and verified<br> hotel with amazing
+      <br>location and
+      private <br>amenities.
+    </p>
+    <p class="hundred"><img src=""><br>Travel advisors connected<br> with us</p>
+    <p class="forty"><img src=""><br>Trip inspections and travels <br>users through
+      our
+      institute</p>
+    <p class="thirty"><img src=""><br> Travel destinations and suggestions<br> based on
+      user's
+      choice</p>
+    <p class="umbrella"><img src=""><br> and lots of sight seeing,<br> with enough
+      free time
+      to <br>roam.</p>
+    <p class="thumb"> <img src=""><br>100+ tour managers and 25+ <br>inhouse sales and
+      support
+      <br>staff.
+    </p>
+    <p class="star"><img src=""><br>Unbeatable Value for you hard<br> earned money with
+      host of<br>
+      exclusive experiences</p>
+  </div>
+
+
+  <div class="fourth">
+    <div><img src=""></div>
+    <section id="photos">
+      <div id="taj">
+        <img src="">
+        <span class="img-des">
+          Taj Mahal<br>Agra
+        </span>
+      </div>
+
+      <div id="hawa">
+        <img src="">
+        <span class="img-des">
+          Hawal Mahal<br>Jaipur
+        </span>
+      </div>
+      <div id="golden">
+        <img src="">
+        <span class="img-des">
+          Golden Temple<br>Amritsar
+        </span>
+      </div>
+      <div id="beach">
+        <img src="">
+        <span class="img-des">
+          Elephant Beach<br>Andaman
+        </span>
+      </div>
+      <div id="boat">
+        <img src="">
+        <span class="img-des">
+          Karuvannuar<br>Kerela
+        </span>
+      </div>
+      <div id="rath">
+        <img src="">
+        <span class="img-des">
+          The Stone Chariot<br>Hampi
+        </span>
+    </section>
+  </div>
+
+
+<!--   <div class="footer">
+    <img src="resources/logo.png" alt="Travel Dial" />
+    <div>
+      <ul>
+        <li><a href="Destination.html">Destinations</a></li>
+        <span id="galleryscroll">
+          <li><a>Gallery</a></li>
+        </span>
+       <span id="aboutscroll"> <li><a>About</a></li></span>
+        <li><a href="Login.html">Login/Signup</a></li>
+        <li><a href="registration.html">Partner with us</a></li>
+      </ul>
+    </div>
+  </div> -->
+
+
+  <!-- <div class="footer"></div> -->
+</body>
+
+<!-- <script src="scripts/nav.js"></script> -->
+<script src="index.js"></script>
+</html>

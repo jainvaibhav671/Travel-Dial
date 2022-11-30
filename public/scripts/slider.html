@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main{
+           
+            width: 300px;
+         text-align: center;
+         margin: auto;
+        }
+
+        .main a{
+            background-color: rgb(240, 232, 232);
+            color: white;
+            width: 50px;
+            height: 50px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 50%;
+            margin: 10px  10px 0;
+        }
+
+        .schoolslides
+        {
+            display:flex;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        .schoolslides::-webkit-scrollbar
+        {
+            height:5px;
+            width: 5px;
+        }
+
+        .schoolslides::-webkit-scrollbar-thumb{
+            background-color: grey;
+            border-radius: 5px;
+        }
+
+        .schoolslides div{
+            width:700px;
+            height: 400px;
+            background-color: beige;
+            margin-right:10px ;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 40px;
+       
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <a href="#law">  </a>
+        <a href="#engg">  </a>
+        <a href="#lib">  </a>
+        <a href="#mgmt">  </a>
+
+        <div class="schoolslides">
+            <div id="law"> <img src="../resources/istockphoto-494659822-612x612.JPG"></div>
+            <div id="engg"> <img src="../resources/2be5619006d21efb31d8d104dc6276ec.JPG"></div>
+            <div id="lib"><img src="../resources/travel-to-rajasthan-amber-fort.JPG"></div>
+           <div id="mgmt"><img src="../resources/india-silhouette-camel-caravan-wallpaper-preview.JPG"></div>
+
+        </div>
+    </div>
+</body>
+</html>
